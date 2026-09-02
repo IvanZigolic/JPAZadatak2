@@ -73,11 +73,11 @@ public class Main {
                 System.out.println("Sastojci: " + i.getName());
             }
         }
-        //Brisanje
-        Meal meal = em.find(Meal.class, 1L);
-        if (meal != null) {
-            em.remove(meal);
-        }
+//        //Brisanje
+//        Meal meal = em.find(Meal.class, 1L);
+//        if (meal != null) {
+//            em.remove(meal);
+//        }
         tx.commit();
         em.close();
         emf.close();

@@ -12,10 +12,10 @@ public class Meal {
     private Long id;
     private String name;
 
+    //OneToMany veza
     @OneToMany
-    @JoinTable(name = "meal_ingridient", joinColumns = @JoinColumn(name = "meal_id"), inverseJoinColumns = @JoinColumn(name = "ingridient_id"))
-    private Set<Ingridient> ingridients = new HashSet<>();
-
+    private Set<Ingridient> ingridients = new HashSet<>(); // mora imat listu objekata
+    //
     public Meal() {
     }
 

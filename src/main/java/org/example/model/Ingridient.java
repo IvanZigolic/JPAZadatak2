@@ -10,9 +10,11 @@ public class Ingridient {
 
     private String name;
 
+    //Many to one
     @ManyToOne
     @JoinColumn(name = "meal_id")
     private Meal meal;
+    //
 
     public Ingridient() {
     }
